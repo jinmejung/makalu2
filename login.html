@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="layout/basic/css/common.css">
+    <link rel="stylesheet" href="layout/basic/css/layout.css">
+    <link rel="stylesheet" href="makalu/css/swiper.min.css">
+    <link rel="stylesheet" href="makalu/index.css">
+    <link rel="stylesheet" href="layout/basic/css/slideMenu.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-button.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-help.css">
+    <link rel="stylesheet" href="css/module/member/login.css">
+    <link rel="stylesheet" href="css/module/myshop/orderHistoryNologin.css">
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="layout/basic/js/slide_menu.js"></script>
+    <script src="js/module/member/login.js"></script>
+    
+    <style>
+        #titleArea{border-bottom:0;    margin-top: 30px;}
+        #titleArea h2{font-size:20px;}
+    </style>
+</head>
+
+<body id="layout">
+  <div class="wrap">
+       <aside id="aside" module="layout_slidePackage">
+            <div class="closeBtn"><a href="#none" closs="btnClose"><i class="material-icons">clear</i></a></div>
+            <div class="left_menu">
+                <ul module="Layout_stateLogoff" class="member">
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="#">REGISTER</a></li>
+                    <li><a href="#">ORDER</a></li>
+                </ul>    
+                <ul class="gnb">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="#">COMMUNITY<i class="fa fa-angle-down" style="font-size:15px"></i></a>
+                        <ul class="sub">
+                            <li><a href="#">NOTICE</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="#">REVIEW</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" target="_blank">SNS</a></li>
+                </ul>
+            </div>
+        </aside>
+        <div id="container">
+          <!-- header -->
+           <header id="header" class="m_header">
+                <div class="header">
+                    <section id="topArea">
+                        <div class="searchWrap">
+                            <p class="category"><a href="#none" class="fold"><i class="material-icons">menu</i></a></p>
+                            <h1 module="Layout_LogoTop"><a href="index.html"><img src="makalu/img/main_logo_w.png" alt="로고" /></a></h1>
+                            <p module="Layout_orderBasketcount" class="xans-layout-orderbasketcount">
+                                <a href="#" class="btnBasket"><i class="material-icons">shopping_cart</i></a>
+                            </p>
+                        </div>
+
+                    </section>
+                </div>
+            </header>
+            <!--// header -->
+            <!-- contents -->
+            <div id="contents">
+                <div id="titleArea">
+                    <h2>LOGIN</h2>
+                </div>
+                <div module="member_login" id="member_login_module_id" class="xans-element- xans-member xans-member-login ">
+                    <!--주문조회-->
+                    <div class="loginWrap">
+                        <div class="ec-base-tab gMerge">
+                            <ul>
+                                <li class="selected">
+                                    <a href="#member">회원</a>
+                                </li>
+                                <li>
+                                    <a href="#noMember">비회원</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <fieldset>
+                            <div class="formBox">
+                                <div class="form">
+                                    <input id="member_id" name="member_id" fw-filter="isFill" fw-label="아이디" fw-msg="" class="inputTypeText" placeholder="아이디" value="" type="text">
+                                    <input id="member_passwd" name="member_passwd" fw-filter="isFill&amp;isMin[4]&amp;isMax[16]" fw-label="패스워드" fw-msg="" value="" type="password" placeholder="패스워드">
+                                </div>
+                                <div class="ec-base-button gFull">
+                                    <button type="button" class="btnSubmit" onclick="{$action_func_login}">로그인</button>
+                                    <a href="#" onclick="{$action_nomember_order}" class="btnEm {$display_nomember|display}">비회원 구매</a>
+                                </div>
+                                <div class="loginUtil">
+                                    <a href="#" class="btnLogin">아이디찾기</a>
+                                    <a href="#" class="btnLogin">비밀번호찾기</a>
+                                    <a href="#" class="btnLogin">회원가입</a>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                     <!--//주문조회-->
+                </div>
+                <div module="MyShop_OrderHistoryNologin"  class="xans-element- xans-myshop xans-myshop-orderhistorynologin " id="order_history_nologin_id">
+                    <div class="ec-base-tab gMerge">
+                        <ul>
+                            <li>
+                                <a href="#member">회원</a>
+                            </li>
+                            <li class="selected">
+                                <a href="#noMember">비회원</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <fieldset>
+                        <div class="formBox">
+                            <div class="form">
+                                  <input id="order_name" name="order_name" fw-filter="isFill" fw-label="주문자명" fw-msg="" class="inputTypeText" placeholder="주문자명" value="" type="text" title="주문자명">                <input id="order_id1" name="order_id1" maxlength="8" fw-filter="isOrderid&amp;isFill" fw-label="주문번호" fw-msg="" value="" type="text" placeholder="주문번호1" title="주문번호1">-<input id="order_id2" name="order_id2" maxlength="10" fw-filter="isOrderid&amp;isFill" fw-label="주문번호" fw-msg="" value="" type="text" placeholder="주문번호2" title="주문번호2">                <input id="order_password" name="order_password" fw-filter="isFill" fw-label="비회원주문 비밀번호" fw-msg="" value="" type="password" placeholder="비회원 주문 패스워드" title="비회원 주문 패스워드">
+                            </div>
+                            <div class="ec-base-button gFull">
+                                <button type="button" class="btnSubmit" onclick="$('#historyNoLoginForm').submit();">조회</button>
+                                <a href="#" class="btnEm">회원가입</a>
+                            </div>
+                            <p class="ec-base-help">비회원인 경우 주문번호로 주문조회만 가능합니다.</p>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <!-- // contents -->
+            <!-- footer -->
+            <footer module="layout_footerPackage">
+               <link rel="stylesheet" href="css/module/layout/footerPackage.css">
+                <div id="footer">
+                        <div class="information">
+                            <a href="about.html">회사소개</a>
+                            <a href="#">이용약관</a>
+                            <a href="#" style="font-weight:bold;">개인정보처리방침</a>
+                            <a href="#">이용안내</a>
+                        </div>
+                            <dl>
+                            <dt>[ CUSTOMER CENTER ]</dt>
+                            <dd class="number">1599-3735 (일반상담문의)</dd>
+                            <dd>AM 11:00 - PM 16:00</dd>
+                            <dd>(06107) 서울특별시 강남구 논현로 626 (논현동) 엠빌딩 7층</dd>
+                        </dl>
+                        <dl>
+                            <dt>[ COMPANY INFO ]</dt>
+                            <dd>Trade : (주)트랜드메카 / CEO : 서대규 / TEL : 1599-3735</dd>
+                            <dd>Permit Number : 113-86-48435 <a href="#none" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=113-86-48435', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a> </dd>
+                            <dd>Fax : 02-6455-2581 / Mail-Order : 2016-서울강남02846호</dd>
+                            <dd>Address : (06107) 서울특별시 강남구 논현로 626 (논현동) 엠빌딩 7층</dd>
+                            <dd>Privacy Manager : 서대규/ E-mail : trendmecca@hotmail.com
+                        </dl>
+                        <p>
+                            Copyright (C) 2018 Trendmecca. All rights reserved.
+                        </p>
+                    </div> 
+            </footer>
+            <!-- // footer -->
+        </div>
+        <p id="btntop">
+            <a href="#" style="color:#333;"><i class="material-icons" style="font-size: 30px;">arrow_upward</i></a>
+        </p>
+    </div> 
+</body>
+</html>
+
+

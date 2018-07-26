@@ -1,0 +1,86 @@
+
+        #aboutWrap{
+            width:100%;
+            font-family:'book','Noto Sans KR','nanumgothic', sans-serif; 
+        }
+
+        .contents_box{
+            width:80%;
+            margin:50px auto;
+            position:relative;
+        }
+        .contents_box >span{
+            color:#666;
+            font-size:6vw;
+            letter-spacing: -2px;
+            line-height:6vw;
+            display: block;
+            margin-bottom:20px;
+            font-weight:400;
+            font-family:'Book', sans-serif;
+            text-align:center;
+        }
+
+        .contents_box .img_box{
+            z-index: -1;
+            width:100%;
+        }
+        .contents_box .img_box img{
+            width:100%;
+        }
+        .contents_box .txt_box{
+            position:relative;
+            font-family:'Book', sans-serif;
+            margin-top: 10px;
+        }
+
+        .contents_box .txt_box h2{
+            color:#000;
+            font-size:8.5vw;
+            letter-spacing:-1.5px;
+            line-height:9vw;
+            font-weight:500;
+            font-family:'Book', sans-serif;
+        }
+
+        .contents_box .txt_box p{
+            font-family:'Noto Sans KR','nanumgothic', sans-serif;
+            color:#777;
+            font-size:12px;
+            font-weight:300;
+            margin-left: 70px;
+            margin-top:30px;
+            line-height:20px;
+        }
+        .contents_box .txt_box p:before{
+            content: "";
+            width: 50px;
+            height: 1px;
+            background-color: #777;
+            position: absolute;
+            left: 0;
+            margin-top: 10px;
+        }
+
+
+        /* 타이틀 */
+        .Sub_title { display:block; margin:0 auto; text-align:center; padding-top:50px;}
+        .Sub_title h2 { display:block; margin:0 auto 5px auto; text-align:center; font-family:'Book', 'Noto Sans KR','nanumgothic', sans-serif; color:#666;
+            letter-spacing: -2px;
+            line-height:6vw;
+            font-weight:400;
+            font-size:6vw!important; text-transform: uppercase; margin-bottom: 20px;}
+
+        /* 오시는길 콘텐츠 */
+        .sub_category_wrap { display:block; width:100%; margin:0 auto; }    
+
+        .location { display:inline-block; margin-top:15px; padding-bottom:30px;width:100%;}
+        .location .location_text{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .location p { float:left; width: 100%; margin-bottom: 15px;  padding: 0 0 15px 0; border-bottom: 1px dotted #777; font-family: 'Noto Sans KR', sans-serif;}
+        .location_text ul{ float:left; width: 100%; padding: 0 0 15px 0; border-bottom: 1px dotted #777; line-height:200%; font-family: 'Noto Sans KR', sans-serif;}
+        .location_text ul li {margin:10px 0;}
+        .location_text span.left{float:left; width:70px; color:#000; font-size:12px; font-weight:500; font-family: 'Noto Sans KR', sans-serif; }
+        .location_text span.right{ color:#777; font-family:nanumgothic; font-size:12px; font-family: 'Noto Sans KR', sans-serif; font-weight:300; }

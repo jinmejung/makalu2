@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAKALU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="layout/basic/css/common.css">
+    <link rel="stylesheet" href="layout/basic/css/layout.css">
+    <link rel="stylesheet" href="makalu/css/swiper.min.css">
+    <link rel="stylesheet" href="makalu/index.css">
+    <link rel="stylesheet" href="layout/basic/css/slideMenu.css">
+    
+    <link rel="stylesheet" href="css/swiper.min.css">
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="layout/basic/js/slide_menu.js"></script>
+    <script src="makalu/js/swiper.min.js"></script>
+    <script src="makalu/index.js"></script>
+    
+    <script src="makalu/index_swiper.js"></script>
+    
+    <style>
+            .swiper-button-prev {
+                left: 10px;
+                background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23dddddd'%2F%3E%3C%2Fsvg%3E");
+            }
+
+            .swiper-button-next {
+                right: 10px;
+                background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23dddddd'%2F%3E%3C%2Fsvg%3E")
+            }
+            #layout #header .header {background-color:#000!important;}
+            .m_header{position:absolute;}
+    </style>
+</head>
+<body id="layout">
+  <div class="wrap">
+       <aside id="aside" module="layout_slidePackage">
+            <div class="closeBtn"><a href="#none" closs="btnClose"><i class="material-icons">clear</i></a></div>
+            <div class="left_menu">
+                <ul module="Layout_stateLogoff" class="member">
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="#">REGISTER</a></li>
+                    <li><a href="#">ORDER</a></li>
+                </ul>    
+                <ul class="gnb">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="#">COMMUNITY<i class="fa fa-angle-down" style="font-size:15px"></i></a>
+                        <ul class="sub">
+                            <li><a href="#">NOTICE</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="#">REVIEW</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" target="_blank">SNS</a></li>
+                </ul>
+            </div>
+        </aside>
+        <div id="container">
+          <!-- header -->
+           <header id="header" class="m_header">
+                <div class="header">
+                    <section id="topArea">
+                        <div class="searchWrap">
+                            <p class="category"><a href="#none" class="fold"><i class="material-icons">menu</i></a></p>
+                            <h1 module="Layout_LogoTop"><a href="index.html"><img src="makalu/img/main_logo_w.png" alt="로고" /></a></h1>
+                            <p module="Layout_orderBasketcount" class="xans-layout-orderbasketcount">
+                                <a href="#" class="btnBasket"><i class="material-icons">shopping_cart</i></a>
+                            </p>
+                        </div>
+
+                    </section>
+                </div>
+            </header>
+            <!--// header -->
+            <!-- contents -->
+            <div id="contents">
+                <div class="main-wrap"> 
+                    <div class="main-visual swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background:url('makalu/img/mobile/mo_main_visual_01.jpg') no-repeat center center; background-size:cover;">
+                                <div>
+                                    <div class="main_txt">
+                                        <span>SPIN YOUR LIFE</span>
+                                        <h2>SPIN YOUR</h2>
+                                    </div>
+                                    <div class="w_img">
+                                        <img src="makalu/img/main_wc_1.png" alt="unique">
+                                    </div>
+                                    <p>UNIQUE</p>
+                                    <a href="#main_tit" class="main-scroll-btn"><img src="makalu/img/mobile/arrow.png" /></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" style="background:url('makalu/img/mobile/mo_main_visual_02.jpg') no-repeat center center; background-size:cover;">
+                                <div>
+                                    <div class="main_txt">
+                                        <span>SPIN YOUR LIFE</span>
+                                        <h2>SPIN YOUR</h2>
+                                    </div>
+                                    <div class="w_img">
+                                        <img src="makalu/img/main_wc_2.png" alt="youth">
+                                    </div>
+                                    <p>YOUTH</p>
+                                    <a href="#main_tit" class="main-scroll-btn"><img src="makalu/img/mobile/arrow.png" /></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" style="background:url('makalu/img/mobile/mo_main_visual_03.jpg') no-repeat center center; background-size:cover;">
+                                <div>
+                                    <div class="main_txt">
+                                        <span>SPIN YOUR LIFE</span>
+                                        <h2>SPIN YOUR</h2>
+                                    </div>
+                                    <div class="w_img">
+                                        <img src="makalu/img/main_wc_3.png" alt="colorful">
+                                    </div>
+                                    <p>COLORFUL</p>
+                                    <a href="#main_tit" class="main-scroll-btn"><img src="makalu/img/mobile/arrow.png" /></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" style="background:url('makalu/img/mobile/mo_main_visual_04.jpg') no-repeat center center; background-size:cover;">
+                                <div>
+                                    <div class="main_txt">
+                                        <span>SPIN YOUR LIFE</span>
+                                        <h2>SPIN YOUR</h2>
+                                    </div>
+                                    <div class="w_img">
+                                        <img src="makalu/img/main_wc_4.png" alt="powerful">
+                                    </div>
+                                    <p>POWERFUL</p>
+                                    <a href="#main_tit" class="main-scroll-btn"><img src="makalu/img/mobile/arrow.png" /></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" style="background:url('makalu/img/mobile/mo_main_visual_05.jpg') no-repeat center center; background-size:cover;">
+                                <div>
+                                    <div class="main_txt">
+                                        <span>SPIN YOUR LIFE</span>
+                                        <h2>SPIN YOUR</h2>
+                                    </div>
+                                    <div class="w_img">
+                                        <img src="makalu/img/main_wc_5.png" alt="simple">
+                                    </div>    
+                                    <p>SIMPLE</p>
+                                    <a href="#main_tit" class="main-scroll-btn"><img src="makalu/img/mobile/arrow.png" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="main_tit" class="main_tit">
+                        <p>"Makalu is the one way to concerntrate on the future."</p>
+                        <span>마칼루는 당신의 미래에 한 발짝 다가설 수 있는 하나의 방법입니다.</span>
+                    </div>
+                    <div class="product_wrap">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="rolling_box">
+                                        <a href="detail.html">
+                                            <img src="makalu/img/main_wc_1.png" alt="">
+                                            <span class="name">MK101BLBL</span>
+                                        </a>
+                                        <a class="swiper_more" href="detail.html">more details</a>
+                                    </div>
+                                </div>
+                            
+                            
+                                <div class="swiper-slide">
+                                    <div class="rolling_box">
+                                        <a href="detail.html">
+                                            <img src="makalu/img/main_wc_2.png" alt="">
+                                            <span class="name">MK101STBL</span>
+                                        </a>
+                                        <a class="swiper_more" href="detail.html">more details</a>
+                                    </div>
+                                </div>
+                           
+                            
+                                <div class="swiper-slide">
+                                    <div class="rolling_box">
+                                        <a href="detail.html">
+                                            <img src="makalu/img/main_wc_3.png" alt="">
+                                            <span class="name">MK101BKRD</span>
+                                        </a>
+                                        <a class="swiper_more" href="detail.html">more details</a>
+                                    </div>
+                                </div>
+                            
+                            
+                                <div class="swiper-slide">
+                                    <div class="rolling_box">
+                                        <a href="detail.html">
+                                            <img src="makalu/img/main_wc_4.png" alt="">
+                                            <span class="name">MK101BKBK</span>
+                                        </a>
+                                        <a class="swiper_more" href="detail.html">more details</a>
+                                    </div>
+                                </div>
+                            
+                            
+                                <div class="swiper-slide">
+                                    <div class="rolling_box">
+                                        <a href="detail.html">
+                                            <img src="makalu/img/main_wc_5.png" alt="">
+                                            <span class="name">MK101STBK</span>
+                                        </a>
+                                        <a class="swiper_more" href="detail.html">more details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                  </div> 
+            </div>
+            <!-- // contents -->
+            <!-- footer -->
+            <footer module="layout_footerPackage">
+               <link rel="stylesheet" href="css/module/layout/footerPackage.css">
+                <div id="footer">
+                        <div class="information">
+                            <a href="about.html">회사소개</a>
+                            <a href="#">이용약관</a>
+                            <a href="#" style="font-weight:bold;">개인정보처리방침</a>
+                            <a href="#">이용안내</a>
+                        </div>
+                            <dl>
+                            <dt>[ CUSTOMER CENTER ]</dt>
+                            <dd class="number">1599-3735 (일반상담문의)</dd>
+                            <dd>AM 11:00 - PM 16:00</dd>
+                            <dd>(06107) 서울특별시 강남구 논현로 626 (논현동) 엠빌딩 7층</dd>
+                        </dl>
+                        <dl>
+                            <dt>[ COMPANY INFO ]</dt>
+                            <dd>Trade : (주)트랜드메카 / CEO : 서대규 / TEL : 1599-3735</dd>
+                            <dd>Permit Number : 113-86-48435 <a href="#none" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=113-86-48435', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a> </dd>
+                            <dd>Fax : 02-6455-2581 / Mail-Order : 2016-서울강남02846호</dd>
+                            <dd>Address : (06107) 서울특별시 강남구 논현로 626 (논현동) 엠빌딩 7층</dd>
+                            <dd>Privacy Manager : 서대규/ E-mail : trendmecca@hotmail.com
+                        </dl>
+                        <p>
+                            Copyright (C) 2018 Trendmecca. All rights reserved.
+                        </p>
+                    </div> 
+            </footer>
+            <!-- // footer -->
+        </div>
+        <p id="btntop">
+            <a href="#" style="color:#333;"><i class="material-icons" style="font-size: 30px;">arrow_upward</i></a>
+        </p>
+    </div>
+</body>
+</html>

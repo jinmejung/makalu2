@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Book','Noto Sans KR','nanumgothic', sans-serif;  
+}
+
+a {
+    text-decoration: none;
+    color:#000;
+}
+
+.main-visual {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position:relative;
+}
+
+.main-visual .swiper-slide {
+    position: relative;
+    background-size: cover;
+}
+
+.main-visual .swiper-slide>div {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.main-visual .swiper-slide>div a {
+    display: block;
+}
+.main-visual .swiper-slide div .main_txt{
+	z-index:15;
+    text-align:center;
+    margin-bottom:30px;
+    font-weight:400;
+    letter-spacing:-1.5px;
+    font-family: 'Book',sans-serif;
+}
+.main-visual .main_txt span{
+	font-size: 4.3vw;
+    line-height: 4.5vw;
+}
+.main-visual .main_txt h2{
+	font-size: 7vw;
+    line-height: 8vw;
+    font-weight: 400;
+}
+.swiper-slide div .w_img{
+	z-index:10;
+    width:100%;
+    text-align:center;
+}
+.swiper-slide div .w_img img{
+	width:60%;
+    max-width: 375px;
+}
+.swiper-slide div p{
+    text-align:center;
+    padding:30px 0;
+    font-size:6vw;
+    font-weight:400;
+    letter-spacing:-1.5px;
+    font-family: 'Book',sans-serif;
+}
+.swiper-slide .main-scroll-btn{
+    text-align:center;
+    display: block;
+}
+.swiper-slide .main-scroll-btn img{
+	width:60px;
+}
+.swiper-pagination {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet {
+    margin: 0 10px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ddd;
+} 
+
+.main_tit{
+	width:100%;
+    text-align:center;
+    padding:60px 0;
+    letter-spacing:-1.3px;
+    background-color:#f7f7f7;
+}
+.main_tit p{
+	font-size:4.2vw;
+    line-height:6vw;
+    font-weight:400;
+    color:#333;
+}
+.main_tit span{
+	font-size:3.3vw;
+    line-height:6vw;
+    color:#666;
+    font-weight:300;
+    font-family:'Noto Sans KR', sans-serif; 
+}
+.product_wrap {
+	margin-top: 20px;
+    width: 100%;
+	margin: 0 auto;
+}
+
+.product_wrap .swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.product_wrap .swiper-container .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+
+
+/* 상품 불러오는 리스트 CSS */
+.rolling_box {  display:block;     padding: 15% 0;     width: 100%;}
+.rolling_box a {  display:block;width:55%; margin:0 auto;}
+.rolling_box img { width:100%;     display: block;}
+.rolling_box span { display:block; clear:both;      font-size: 20px; font-weight: 600;color: #222; line-height: 1.5; text-align:center;  text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.rolling_boxspan a { color:#666; }
+.rolling_box a:hover{ text-decoration:none;  opacity:0.8; transition:0.4s ease;}
+.rolling_box span.menu {}
+.rolling_box span.name {text-overflow:ellipsis;overflow:hidden;white-space:nowrap; margin-top: 12%;}
+
+.rolling_box  .swiper_more{  text-transform: uppercase;
+    border: 1px solid #4b4b4b;
+    color: #4b4b4b;
+    padding: 10px 0;
+    font-size: 10px;
+    letter-spacing: 0.5px; width:100px;margin-top: 20px;}
+
